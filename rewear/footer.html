@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Header</title>
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background: #fff;
+      border-bottom: 1px solid #eee;
+    }
+
+    .header .left-icons,
+    .header .right-icons {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .header .logo {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #ff6a4d; /* Orange/red color for D */
+    }
+
+    .icon-badge {
+      position: relative;
+    }
+
+    .icon-badge::after {
+      content: '2';
+      position: absolute;
+      top: -6px;
+      right: -6px;
+      background: black;
+      color: white;
+      font-size: 10px;
+      border-radius: 50%;
+      padding: 2px 5px;
+      line-height: 1;
+    }
+
+    .bx {
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  
+  <header class="header">
+    <div class="left-icons">
+      <i class="bx bx-menu"></i>
+      <i class="bx bx-search"></i>
+    </div>
+
+    <div class="logo">
+      <span>R</span>EWARE
+    </div>
+
+    <div class="right-icons">
+      <i class="bx bx-user"></i>
+      <i class="bx bx-heart icon-badge"></i>
+      <i class="bx bx-shopping-bag icon-badge"></i>
+    </div>
+  </header>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Footer Example</title>
+
+  <!-- Boxicons CDN for icons -->
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+
+    .footer {
+      background: #fff;
+      border-top: 1px solid #ccc;
+      padding: 40px 20px 20px;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: auto;
+      gap: 30px;
+    }
+
+    .footer-box {
+      flex: 1 1 200px;
+    }
+
+    .footer-box h4 {
+      margin-bottom: 15px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .footer-box ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-box ul li {
+      margin-bottom: 10px;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .footer-box ul li i {
+      margin-right: 8px;
+      color: #555;
+    }
+
+    .footer-box ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    .footer-box ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-box input[type="email"] {
+      padding: 10px;
+      width: 100%;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .footer-box button {
+      padding: 10px 20px;
+      background: black;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .footer-box button:hover {
+      background: #444;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #ddd;
+      margin-top: 30px;
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 30px auto 0;
+    }
+
+    .socials span {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .socials i {
+      font-size: 20px;
+      margin: 0 5px;
+      color: #333;
+      cursor: pointer;
+    }
+
+    .socials i:hover {
+      color: #007BFF;
+    }
+
+    .payments img {
+      height: 30px;
+      margin: 0 5px;
+    }
+
+    @media (max-width: 768px) {
+      .footer-container,
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+      }
+
+      .footer-box {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-box">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Kids</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-box">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">My Orders</a></li>
+          <li><a href="#">Terms And Conditions</a></li>
+          <li><a href="#">Returns & Exchange</a></li>
+          <li><a href="#">Ordering & Payment</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-box">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><i class="bx bx-map"></i>City center, Gallaxy road,krishnagar<br></li>
+          <li><i class="bx bx-phone"></i> (+91) 000 000 0000</li>
+          <li><i class="bx bx-envelope"></i>recare@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- <div class="footer-bottom">
+      <div class="socials">
+        <span>Stay Connected</span>
+        <i class="bx bxl-facebook"></i>
+        <i class="bx bxl-twitter"></i>
+        <i class="bx bxl-pinterest"></i>
+        <i class="bx bxl-instagram"></i>
+        <i class="bx bxl-youtube"></i>
+      </div>
+      <div class="payments">
+        <img src="https://img.icons8.com/color/48/visa.png" alt="visa" />
+        <img src="https://img.icons8.com/color/48/mastercard.png" alt="mastercard" />
+        <img src="https://img.icons8.com/color/48/amex.png" alt="amex" />
+        <img src="https://img.icons8.com/color/48/paypal.png" alt="paypal" />
+        <img src="https://img.icons8.com/color/48/discover.png" alt="discover" />
+      </div>
+    </div> -->
+  </footer>
+
+</body>
+</html>
+
